@@ -1,0 +1,11 @@
+Rod,800,2024-12-04T11:30:20.1236637,239
+Antonio,0,N/A,1
+Jugador1,0,N/A,1
+Jugador17,0,N/A,1
+ROd,0,N/A,1
+Parra,10,2024-11-28T17:31:43.4156808,3
+Jugador18,0,N/A,1
+Jugador2,0,N/A,1
+ROD,0,N/A,1
+rOD,0,N/A,1
+Jugador10,0,N/A,1

@@ -1,4 +1,4 @@
-package com.zetcode;
+
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -20,16 +20,19 @@ public class Snake {
     
 
     public void draw(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+    
         for (int i = 0; i < body.size(); i++) {
             if (i == 0) {
-                g.setColor(GameStyles.PRIMARY_COLOR);
+                g2d.setColor(GameStyles.PRIMARY_COLOR);
             } else {
-                g.setColor(GameStyles.SECONDARY_COLOR);
+                g2d.setColor(GameStyles.SECONDARY_COLOR);
             }
             Point p = body.get(i);
-            g.fillRect(p.x, p.y, DOT_SIZE, DOT_SIZE);
+            g2d.fillRect(p.x, p.y, DOT_SIZE, DOT_SIZE); // Las coordenadas y tamaño no cambian
         }
     }
+    
 
     public void move() {
         for (int i = body.size() - 1; i > 0; i--) {

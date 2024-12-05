@@ -1,4 +1,4 @@
-package com.zetcode;
+
 
 import java.awt.*;
 
@@ -14,6 +14,10 @@ public class GameStyles {
     public static final Font BUTTON_FONT = new Font("Arial", Font.BOLD, 18);
     public static final Font INFO_FONT = new Font("Arial", Font.PLAIN, 14);
 
+    // Añadir estas líneas en la clase GameStyles
+    public static final Color GAME_INFO_BACKGROUND = new Color(40, 40, 40);
+    public static final Color GAME_INFO_TEXT = new Color(200, 200, 200);
+    
     public static void styleButton(JButton button) {
         button.setFont(BUTTON_FONT);
         button.setForeground(BACKGROUND_COLOR);
@@ -22,4 +26,9 @@ public class GameStyles {
         button.setBorderPainted(false);
         button.setOpaque(true);
     }
+
+
+    
 }
+
+

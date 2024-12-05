@@ -1,4 +1,4 @@
-package com.zetcode;
+
 
 public interface Scoreable {
     void updateScore(int points);
@@ -6,3 +6,7 @@ public interface Scoreable {
     void resetScore();
     boolean isHighScore();
 }
+
+
+
+//sss
