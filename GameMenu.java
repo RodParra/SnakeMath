@@ -20,29 +20,29 @@ public class GameMenu extends JPanel {
     }
 
     private void initMenu() {
-        setPreferredSize(new Dimension(600, 400));
+        setPreferredSize(new Dimension(800, 600));
         setBackground(GameStyles.BACKGROUND_COLOR);
         setLayout(null);
 
         JLabel titleLabel = new JLabel("SnakeMath");
         titleLabel.setFont(GameStyles.TITLE_FONT);
         titleLabel.setForeground(GameStyles.PRIMARY_COLOR);
-        titleLabel.setBounds(150, 50, 300, 60);
+        titleLabel.setBounds(250, 30, 280, 70);
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
 
         JButton startButton = new JButton("Iniciar Juego");
         GameStyles.styleButton(startButton);
-        startButton.setBounds(200, 200, 200, 50);
+        startButton.setBounds(250, 180, 280, 70);
         startButton.addActionListener(e -> mainFrame.startGame());
 
         JButton highScoresButton = new JButton("Mejores Puntajes");
         GameStyles.styleButton(highScoresButton);
-        highScoresButton.setBounds(200, 270, 200, 50);
+        highScoresButton.setBounds(250, 300, 280, 70);
         highScoresButton.addActionListener(e -> showHighScores());
 
         JButton exitButton = new JButton("Salir");
         GameStyles.styleButton(exitButton);
-        exitButton.setBounds(200, 340, 200, 50);
+        exitButton.setBounds(250, 400, 280, 70);
         exitButton.addActionListener(e -> System.exit(0));
 
         add(titleLabel);
@@ -163,7 +163,7 @@ private void showHighScores() {
             }
         };
         snakeBody.setOpaque(false);
-        snakeBody.setBounds(450, 300, 150, 100);
+        snakeBody.setBounds(600, 300, 300, 200);
         add(snakeBody);
     }
 }

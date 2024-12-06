@@ -34,7 +34,7 @@ public class ScoredGameBoard extends GameComponent implements Scoreable, ActionL
     private GameInfoPanel infoPanel;
     private boolean showGameOver = false;
     private JButton returnToMenuButton;
-    private static final int SCALE = 3;
+    private static final int SCALE = 4;
     private boolean inGame;
 
     private Player currentPlayer;
@@ -45,7 +45,7 @@ public class ScoredGameBoard extends GameComponent implements Scoreable, ActionL
     private SoundPlayer gameMusic;
     private SoundPlayer eatNumberSound;
     private SoundPlayer levelCompleteSound;
-
+    private SoundPlayer MusicMenu;
 
     public ScoredGameBoard(SnakeMath frame, Player player, GameInfoPanel infoPanel) {
         

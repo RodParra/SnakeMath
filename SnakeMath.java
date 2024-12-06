@@ -119,6 +119,7 @@ public class SnakeMath extends JFrame {
 
     
     public void showMenu() {
+        MusicMenu.loop();
         getContentPane().removeAll();
         add(new GameMenu(this));
         pack();
